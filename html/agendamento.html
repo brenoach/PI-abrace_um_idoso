@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Consulta de Agendamento de Visitas - Abrace um Idoso</title>
+
+  <!-- Fonte e estilos globais -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./../css/estilo.css" />
+  <link rel="stylesheet" href="./../css/agendamentos.css" />
+</head>
+
+<body>
+  <!-- Cabeçalho -->
+  <header class="cabecalho">
+    <a href="./inicio.html" class="logo">
+      <img src="./../imagem/logoPI.jpg" alt="LogoAbraceUmIdoso">
+    </a>
+    <nav class="nav-menu">
+      <ul>
+        <li><a href="./cadastro.html">Cadastrar</a></li>
+        <li><a href="/login">Login</a></li>
+      </ul>
+      <ul>
+        <li><a href="./inicio.html">Início</a></li>
+        <li><a href="./agendamento.html" class="ativo">Agendamento</a></li>
+        <li><a href="/cartas">Cartas</a></li>
+        <li><a href="./contatos.html">Fale Conosco</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Conteúdo principal -->
+  <main class="container-agenda">
+    <h1 class="titulo-pagina">Consulta de Agendamento de Visitas - Perfil Instituição (Breno)</h1>
+
+    <section class="agenda-layout">
+      <!-- Mini calendário lateral -->
+      <aside class="mini-calendario">
+        <div class="calendario-header">
+          <span class="mes">JANEIRO 2025</span>
+        </div>
+        <table class="calendario">
+          <thead>
+            <tr>
+              <th>Dom</th>
+              <th>Seg</th>
+              <th>Ter</th>
+              <th>Qua</th>
+              <th>Qui</th>
+              <th>Sex</th>
+              <th>Sáb</th>
+            </tr>
+          </thead>
+          <tbody id="calendario-body">
+            <!-- Corpo será preenchido dinamicamente pelo back-end -->
+          </tbody>
+        </table>
+      </aside>
+
+      <!-- Tabela de agendamento -->
+      <section class="tabela-agenda">
+        <table>
+          <thead>
+            <tr>
+              <th class="hora-coluna"></th>
+              <th>Seg<br><span>6</span></th>
+              <th>Ter<br><span>7</span></th>
+              <th>Qua<br><span>8</span></th>
+            </tr>
+          </thead>
+          <tbody id="agenda-body">
+            <!-- Exemplo de estrutura estática -->
+            <tr>
+              <td class="hora">09:00</td>
+              <td class="agendamento azul">
+                <p><strong>Voluntário:</strong> Ana Clara<br>
+                <strong>Idoso:</strong> Francisca</p>
+              </td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="hora">10:00</td>
+              <td></td>
+              <td class="agendamento vermelho">
+                <p><strong>Voluntário:</strong> João Pedro<br>
+                <strong>Idoso:</strong> Valdemar</p>
+              </td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="hora">11:00</td>
+              <td></td>
+              <td></td>
+              <td class="agendamento vermelho">
+                <p><strong>Voluntário:</strong> João Pedro<br>
+                <strong>Idoso:</strong> Valdemar</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="hora">12:00</td>
+              <td></td>
+              <td class="agendamento vermelho">
+                <p><strong>Voluntário:</strong> Ana Clara<br>
+                <strong>Idoso:</strong> Francisca</p>
+              </td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="hora">13:00</td>
+              <td class="agendamento azul">
+                <p><strong>Voluntário:</strong> João Pedro<br>
+                <strong>Idoso:</strong> Valdemar</p>
+              </td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="hora">14:00</td>
+              <td></td>
+              <td></td>
+              <td class="agendamento vermelho">
+                <p><strong>Voluntário:</strong> Ana Clara<br>
+                <strong>Idoso:</strong> Francisca</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="hora">15:00</td>
+              <td></td>
+              <td class="agendamento vermelho">
+                <p><strong>Voluntário:</strong> Ana Clara<br>
+                <strong>Idoso:</strong> Francisca</p>
+              </td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </section>
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="rodape">
+    <p>© 2025 RastroCerto. Todos os direitos reservados</p>
+  </footer>
+</body>
+</html>
